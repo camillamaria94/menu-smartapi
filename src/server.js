@@ -1,3 +1,5 @@
+require ('dotenv/config')
+
 const typeRecipe = require ('./routes/typeRecipeRoutes')
 const user = require ('./routes/userRoutes')
 const recipe = require ('./routes/recipeRoutes')

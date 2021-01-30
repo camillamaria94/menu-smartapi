@@ -5,9 +5,10 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'bd_alimentacao',
-      user:     'postgres',
-      password: 'newace2009'
+      host: process.env.DATABASE_HOST,
+      database: process.env.DATABASE_NAME,
+      user:     process.env.DATABASE_USER,
+      password: process.env.DATABASE_PASSWORD
     },
     pool: {
       min: 2,
