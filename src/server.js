@@ -1,5 +1,5 @@
-require ('dotenv/config')
-
+require ('dotenv/config') 
+const port = process.env.APPLICATION_PORT || 3001
 const typeRecipe = require ('./routes/typeRecipeRoutes')
 const user = require ('./routes/userRoutes')
 const recipe = require ('./routes/recipeRoutes')
@@ -53,4 +53,4 @@ app.get('/', (req,res) => {
 });
 
 
-app.listen(3001);
+app.listen(port);
