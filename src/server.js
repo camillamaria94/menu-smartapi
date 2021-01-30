@@ -1,5 +1,5 @@
 require ('dotenv/config') 
-const port = process.env.APPLICATION_PORT || 3001
+const port = process.env.PORT || 3001
 const typeRecipe = require ('./routes/typeRecipeRoutes')
 const user = require ('./routes/userRoutes')
 const recipe = require ('./routes/recipeRoutes')
