@@ -53,4 +53,10 @@ app.get('/', (req,res) => {
 });
 
 
+const knexconection = require('./database/getConection')()
+
+knexconection.migrate.latest({
+    loadExtensions: ['.js'],
+  });
+
 app.listen(port, () => (console.log("app running on port: ",port)));
